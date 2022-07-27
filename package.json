@@ -1,0 +1,96 @@
+{
+  "name": "digination-tools",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": ".",
+  "dependencies": {
+    "@0xsequence/multicall": "^0.39.6",
+    "@apollo/client": "^3.6.9",
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "@ethersproject/abstract-provider": "^5.6.1",
+    "@ethersproject/providers": "^5.6.8",
+    "@metamask/detect-provider": "^1.2.0",
+    "@mui/icons-material": "^5.8.4",
+    "@mui/material": "^5.8.5",
+    "@mui/styled-engine-sc": "^5.8.0",
+    "@mui/x-data-grid": "^5.12.3",
+    "@openzeppelin/contracts": "^4.7.0",
+    "@tarojs/mobx": "^2.2.10",
+    "@tarojs/mobx-h5": "^2.2.10",
+    "@tarojs/mobx-rn": "^2.2.10",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@web3-react/core": "^6.1.9",
+    "@web3-react/injected-connector": "^6.0.7",
+    "apollo-client-preset": "^1.0.8",
+    "audit": "^0.0.6",
+    "axios": "^0.27.2",
+    "dapp-wallet-modal": "^1.0.5",
+    "eth-chains": "^1.0.0",
+    "ethers": "^5.6.9",
+    "fix": "^0.0.6",
+    "graphql": "^16.5.0",
+    "graphql-tag": "^2.12.6",
+    "immutable": "^4.1.0",
+    "md5": "^2.3.0",
+    "mobx": "4.8.0",
+    "node-polyfill-webpack-plugin": "^1.1.4",
+    "react": "^18.2.0",
+    "react-apollo": "^3.1.5",
+    "react-async-hook": "^4.0.0",
+    "react-copy-to-clipboard": "^5.1.0",
+    "react-dedux": "^0.4.0-beta.4",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.2",
+    "react-router": "^6.3.0",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.1",
+    "react-spinners": "^0.13.3",
+    "redux": "^4.2.0",
+    "redux-immutable": "^4.0.0",
+    "redux-thunk": "^2.4.1",
+    "styled-components": "^5.3.5",
+    "web-vitals": "^2.1.4",
+    "web3": "^1.7.4",
+    "xhr2-cookies": "^0.9.1"
+  },
+  "scripts": {
+    "dev": "react-app-rewired start",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "assert": "^2.0.0",
+    "buffer": "^6.0.3",
+    "crypto-browserify": "^3.12.0",
+    "https-browserify": "^1.0.0",
+    "os-browserify": "^0.3.0",
+    "process": "^0.11.10",
+    "react-app-rewired": "^2.2.1",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "url": "^0.11.0"
+  }
+}

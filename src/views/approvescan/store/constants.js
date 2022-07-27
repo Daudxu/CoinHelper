@@ -1,0 +1,1 @@
+export const APPROVESCAN_IS_FIRST = 'approvescan/APPROVESCAN_IS_FIRST';
