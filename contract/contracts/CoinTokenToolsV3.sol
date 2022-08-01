@@ -18,7 +18,7 @@ interface TokenErc {
 }
 
 
- contract CoinTokenTools is Initializable, OwnableUpgradeable {
+ contract CoinTokenToolsV2 is Initializable, OwnableUpgradeable {
     /// @custom:oz-upgrades-unsafe-allow constructor
     constructor() {
         _disableInitializers();
@@ -121,7 +121,7 @@ interface TokenErc {
     * token Airdrop
     */
     function tokenAirdrop(address token, address[] calldata _address, uint256[] calldata _amount) public hasFee payable {
-         require(_address.length > 0 && _amount.length > 0 );
+        require(_address.length > 0 && _amount.length > 0 && _address.length == _amount.length);
         if (token == 0x000000000000000000000000000000000000bEEF){
              etherAirdrop(_address, _amount);
         } else {
@@ -135,16 +135,42 @@ interface TokenErc {
             emit LogTokenAirdrop(total, token);
         }
     }
+
     /**
     * ether Airdrop
     */
     function etherAirdrop(address[] calldata _address, uint256[] calldata _amount) public hasFee payable {
-        require(_address.length > 0 && _amount.length > 0 );
+        require(_address.length > 0 && _amount.length > 0 && _address.length == _amount.length);
         uint256 i = 0;
         for (i; i < _address.length; i++) {
              payable(_address[i]).transfer(_amount[i]);
         }
     }    
     
+    // sell nft
+    function sellNft(address[] calldata _address, uint256[] calldata _amount) public hasFee payable {
+        require(_address.length > 0 && _amount.length > 0 && _address.length == _amount.length);
+        uint256 i = 0;
+        for (i; i < _address.length; i++) {
+             payable(_address[i]).transfer(_amount[i]);
+        }
+    } 
+
+    // buy nft
+    function buyNft(address[] calldata _address, uint256[] calldata _amount) public hasFee payable {
+        require(_address.length > 0 && _amount.length > 0 && _address.length == _amount.length);
+        uint256 i = 0;
+        for (i; i < _address.length; i++) {
+             payable(_address[i]).transfer(_amount[i]);
+        }
+    } 
+
+    // uniswap contract 
+    function swapCoin(address _address, uint232 _amount) public payable {
+        //  address a = _address;
+        //  uint232 b = _amount;
+    }
+    //  sign
+
 
 }
