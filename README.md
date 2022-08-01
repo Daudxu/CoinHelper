@@ -6,3 +6,5 @@ yarn
 
 step 2
 yarn dev
+
+contract
