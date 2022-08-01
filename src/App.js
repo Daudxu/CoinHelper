@@ -17,6 +17,7 @@ import RewardToken from "./views/curve/RewardToken";
 import TokenSnapshot from "./views/curve/tokenSnapshot";
 import Uniswap from "./views/uniswap";
 import Evm from "./views/evm";
+import Nft from "./views/nft";
 
 import { Provider } from'react-redux';
 import store from "./store";
@@ -42,6 +43,7 @@ class App extends Component {
               <Route path="curve/tokenSnapshot" element={<TokenSnapshot />} />
               <Route path="uniswap" element={<Uniswap />} />
               <Route path="evm" element={<Evm />} />
+              <Route path="nft" element={<Nft />} />
            </Routes>
         </Router>
      </Provider>

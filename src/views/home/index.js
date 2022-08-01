@@ -14,6 +14,7 @@ const hotList = [
     {id:3, name: "Wallet Approve Scan", desc:" Check which contracts the wallet address has authorized", link: "approve-scan"}
 ]
 
+
 class Home extends PureComponent {
     render() {
         return (

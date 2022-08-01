@@ -16,7 +16,6 @@
     "@mui/styled-engine-sc": "^5.8.0",
     "@mui/x-data-grid": "^5.12.3",
     "@openzeppelin/contracts": "^4.7.0",
-    "@tarojs/mobx": "^2.2.10",
     "@tarojs/mobx-h5": "^2.2.10",
     "@tarojs/mobx-rn": "^2.2.10",
     "@testing-library/jest-dom": "^5.16.4",
@@ -31,12 +30,14 @@
     "eth-chains": "^1.0.0",
     "ethers": "^5.6.9",
     "fix": "^0.0.6",
+    "fs": "^0.0.1-security",
     "graphql": "^16.5.0",
     "graphql-tag": "^2.12.6",
     "immutable": "^4.1.0",
     "md5": "^2.3.0",
     "mobx": "4.8.0",
     "node-polyfill-webpack-plugin": "^1.1.4",
+    "opensea-js": "^4.0.5",
     "react": "^18.2.0",
     "react-apollo": "^3.1.5",
     "react-async-hook": "^4.0.0",
@@ -54,7 +55,7 @@
     "styled-components": "^5.3.5",
     "web-vitals": "^2.1.4",
     "web3": "^1.7.4",
-    "xhr2-cookies": "^0.9.1"
+    "xhr2-cookies": "^1.1.0"
   },
   "scripts": {
     "dev": "react-app-rewired start",
